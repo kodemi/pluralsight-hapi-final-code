@@ -12,7 +12,7 @@ node server.js
 ## Notes (upgrading from v8 to v13)
 
 1. To use **file** in handlers you need to install and register **[inert](https://github.com/hapijs/inert)** module.
-2. For template rendering with ``server.view`` you need to install and register **[vision](https://github.com/hapijs/vision)** module  
+2. For template rendering with ``server.view`` you need to install and register **[vision](https://github.com/hapijs/vision)** module.
 3. Configuration of **[good](https://github.com/hapijs/good)** plugin has been changed since hapi 8.
 4. If your app crashes with error **Error: Failed to encode cookie (sid) value: Password string too short (min 32 characters required)** be sure to set minimum 32 characters password in auth.strategy config:
 
