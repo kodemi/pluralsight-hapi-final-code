@@ -21,7 +21,7 @@ node server.js
         redirectTo: '/login',
         isSecure: false
     });
-```
+```  
 5. Mandrill is now a paid MailChimp add-on. You have to choose an alternative. 
 Check out, for example: [Is Mandrill Done? 5 Alternatives for Your Transactional Email](http://www.codeinwp.com/blog/mandrill-alternatives/). 
 I chose [SendGrid](https://sendgrid.com/). Register on site and create API KEY likewise for Mandrill in course video. SendGrid has official node.js [library](https://github.com/sendgrid/sendgrid-nodejs).  
