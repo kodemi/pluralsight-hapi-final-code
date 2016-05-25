@@ -5,6 +5,8 @@ This repository contains the final code for the [Building Web Applications with 
 ## Installation
 
 ```
+git clone https://github.com/kodemi/pluralsight-hapi-final-code.git
+cd pluralsight-hapi-final-code
 npm install
 node server.js
 ```
