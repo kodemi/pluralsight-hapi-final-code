@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hapi Greetings</title>
+	<link rel="stylesheet" href="/assets/css/stylesheet.css" />
+</head>
+<body>
+	<div class="new_card">
+		<div class="new_title">New Card</div>
+		<form action="new" method="POST">
+			<div class="form-row">
+				<div class="form-group">
+					<label for="recipientField">Recipient's Name</label>
+					<input type="text" id="recipientField" class="form-control" name="name" placeholder="Recipient's Name">
+				</div>
+				<div class="form-group">
+					<label for="recipientEmail">Recipient's Email</label>
+					<input type="text" id="recipientEmail" class="form-control" name="recipient_email" placeholder="Recipient's Email">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group">
+					<label for="senderField">Sender's Name</label>
+					<input type="text" id="senderField" class="form-control" name="sender_name" placeholder="Sender's Name">
+				</div>
+				<div class="form-group">
+					<label for="senderEmail">Sender's Email</label>
+					<input type="text" id="senderEmail" class="form-control" name="sender_email" placeholder="Sender's Email">
+				</div>
+			</div>
+			<h3>Select Card:</h3>
+			<div class="card-images">
+				{{#each card_images}}
+				<label>
+					<input type="radio" name="card_image" value="{{this}}">
+					<img src="/assets/images/cards/{{this}}">
+				</label>
+				{{/each}}
+			</div>
+			<input type="submit" value="Create">
+		</form>
+	</div>
+</body>
+</html>
