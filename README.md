@@ -6,7 +6,7 @@ This repository contains the final code for the [Building Web Applications with 
 
 ```
 npm install
-npm server.js
+node server.js
 ```
 
 ## Notes (upgrading from v8 to v13)
